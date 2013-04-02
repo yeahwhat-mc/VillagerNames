@@ -1,0 +1,7 @@
+name: VillagerNames
+main: mn.frd.VillagerNames.VillagerNames
+version: 0.1
+website: http://frd.mn
+author: frdmn
+description: >
+            Plugin to name villagers as soon as they spawn based on a dictionary
