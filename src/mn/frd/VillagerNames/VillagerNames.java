@@ -7,7 +7,6 @@ import org.bukkit.entity.EntityType;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.CreatureSpawnEvent;
-import org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason;
 import org.bukkit.plugin.java.JavaPlugin;
 
 
@@ -22,7 +21,7 @@ public class VillagerNames extends JavaPlugin implements Listener {
 			this.saveDefaultConfig();
 			this.reloadConfig();
 		}
-		
+
 		// Register events
 		this.getServer().getPluginManager().registerEvents(this, this);
 		// Log loading
@@ -39,24 +38,19 @@ public class VillagerNames extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onCreatureSpawn(CreatureSpawnEvent event)
 	{
-		// Get all spawn reasons
-		if(event.getSpawnReason() == SpawnReason.NATURAL || event.getSpawnReason() == SpawnReason.CUSTOM || event.getSpawnReason() == SpawnReason.CHUNK_GEN) {
-			
-			// Check if Creature is a VILLAGER
-			if(event.getEntityType() == EntityType.VILLAGER)
-			{
-				// Load the names out of config.yml into a List
-				List<?> names = this.getConfig().getList("names");
-				// Shuffle that list
-				java.util.Collections.shuffle(names);
-				// Get the first element of the list
-				String randomname = names.get(0).toString();
-				
-				// Set the custom name of the Villager
-				event.getEntity().setCustomName(randomname);
-				event.getEntity().setCustomNameVisible(true);
+		// Check if Creature is a VILLAGER
+		if(event.getEntityType() == EntityType.VILLAGER)
+		{
+			// Load the names out of config.yml into a List
+			List<?> names = this.getConfig().getList("names");
+			// Shuffle that list
+			java.util.Collections.shuffle(names);
+			// Get the first element of the list
+			String randomname = names.get(0).toString();
 
-			}
+			// Set the custom name of the Villager
+			event.getEntity().setCustomName(randomname);
+			event.getEntity().setCustomNameVisible(true);
 		}
 	}
 }
