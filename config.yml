@@ -1,9 +1,10 @@
 #
-# VillagerName 0.1
+# VillagerName 0.1b (custom)
 # by frdmn (http://frd.mn)
+# for Zerkhaan
 #
 
-names:
+villager:
 - 'Adelaide'
 - 'Aelfwald'
 - 'Aelfweard'
@@ -174,3 +175,8 @@ names:
 - 'Wulfhere'
 - 'Xalvador'
 - 'Zane'
+
+zombies:
+- 'Zombie-1'
+- 'Zombie-2'
+- 'Zombie-3'

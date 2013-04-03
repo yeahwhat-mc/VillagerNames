@@ -42,13 +42,28 @@ public class VillagerNames extends JavaPlugin implements Listener {
 		if(event.getEntityType() == EntityType.VILLAGER)
 		{
 			// Load the names out of config.yml into a List
-			List<?> names = this.getConfig().getList("names");
+			List<?> names = this.getConfig().getList("villager");
 			// Shuffle that list
 			java.util.Collections.shuffle(names);
 			// Get the first element of the list
 			String randomname = names.get(0).toString();
 
 			// Set the custom name of the Villager
+			event.getEntity().setCustomName(randomname);
+			event.getEntity().setCustomNameVisible(true);
+		}
+
+		// Check if Creature is a ZOMBIE
+		if(event.getEntityType() == EntityType.ZOMBIE)
+		{
+			// Load the names out of config.yml into a List
+			List<?> names = this.getConfig().getList("zombies");
+			// Shuffle that list
+			java.util.Collections.shuffle(names);
+			// Get the first element of the list
+			String randomname = names.get(0).toString();
+
+			// Set the custom name of the zombie
 			event.getEntity().setCustomName(randomname);
 			event.getEntity().setCustomNameVisible(true);
 		}
