@@ -1,9 +1,9 @@
 #
-# VillagerName 0.1
+# VillagerName 0.2
 # by frdmn (http://frd.mn)
 #
 
-names:
+farmer:
 - 'Adelaide'
 - 'Aelfwald'
 - 'Aelfweard'
@@ -38,6 +38,7 @@ names:
 - 'Berhtwald'
 - 'Borin'
 - 'Brom'
+librarian:
 - 'Brorda'
 - 'Brunhild'
 - 'Bryce'
@@ -72,6 +73,7 @@ names:
 - 'Eanulf'
 - 'Eawa'
 - 'Ecgfrith'
+priest:
 - 'Edmund'
 - 'Egbert'
 - 'Eginhard'
@@ -106,6 +108,7 @@ names:
 - 'Hubert'
 - 'Hygeberht'
 - 'Icil'
+blacksmith:
 - 'Ine'
 - 'Ingild'
 - 'Isabel'
@@ -140,6 +143,7 @@ names:
 - 'Offa'
 - 'Osmod'
 - 'Penda'
+butcher:
 - 'Peter'
 - 'Peyton'
 - 'Phrowenia'
