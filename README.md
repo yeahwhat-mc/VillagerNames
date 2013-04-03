@@ -11,10 +11,14 @@ If you search for the custom version that includes also a name dictionary for Zo
 * Lightweight
 * Simple
 * Easy to configure
+* new Feature: Different names per Villager Profession
+* new Feature: Randomize the names of all loaded Villagers
 
 ## Permissions
 
-_none_
+Permission | Purpose | Default
+--- | --- | ---
+`villagernames.randomize | Randomize the names of all loaded Villagers | ops
 
 ## Screenshots
 
@@ -24,9 +28,20 @@ _none_
 
 ## config.yml
 
-    names:
+    farmer:
     - 'Adelaide'
-    - 'Aelfwald'
+    - ...
+    librarian:
+    - 'Brorda'
+    - ...
+    priest:
+    - 'Edmund'
+    - ...
+    blacksmith:
+    - 'Ine'
+    - ...
+    butcher:
+    - 'Peter'
     - ...
 
 ## Depencies
@@ -35,4 +50,4 @@ _none_
 
 ## Version
 
-0.1
+0.2
