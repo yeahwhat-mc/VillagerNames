@@ -4,6 +4,8 @@ VillagerNames is a plugin that allows you to name your Villagers by default base
 
 You can find an executable version of this plugin on [dev.bukkit.org](http://dev.bukkit.org/server-mods/villagernames/).
 
+If you search for the custom verion that includes also a name dictionary for Zombie entities, checkout [the "ZombieNames" branch](https://github.com/frdmn/VillagerNames/tree/ZombieNames).
+
 ## Features:
 
 * Lightweight
