@@ -1,8 +1,9 @@
 #
-# VillagerName 0.2
+# VillagerName 0.3
 # by frdmn (http://frd.mn)
 #
 
+log: true
 farmer:
 - 'Adelaide'
 - 'Aelfwald'

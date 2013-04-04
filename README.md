@@ -11,14 +11,17 @@ If you search for the custom version that includes also a name dictionary for Zo
 * Lightweight
 * Simple
 * Easy to configure
-* new Feature: Different names per Villager Profession
-* new Feature: Randomize the names of all loaded Villagers
+* [MCStats](http://mcstats.org/) metrics support
+* Different names per Villager Profession
+* Randomize the names of all loaded Villagers
+* new Feature: Rename easily the villager that you're looking at
 
 ## Permissions
 
 Permission | Purpose | Default
 --- | --- | ---
 `villagernames.randomize | Randomize the names of all loaded Villagers | ops
+`villagernames.rename | Rename easily the villager that you're looking at | ops
 
 ## Screenshots
 
@@ -28,6 +31,7 @@ Permission | Purpose | Default
 
 ## config.yml
 
+    debug: true
     farmer:
     - 'Adelaide'
     - ...
@@ -50,4 +54,4 @@ _none_
 
 ## Version
 
-0.2
+0.3
