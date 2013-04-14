@@ -1,6 +1,6 @@
 name: VillagerNames
 main: mn.frd.VillagerNames.VillagerNames
-version: 0.3
+version: 0.4
 website: http://frd.mn
 author: frdmn
 description: >
@@ -8,6 +8,7 @@ description: >
 commands: 
   villagernames:
     description: Randomize the names of all loaded Villagers
+    aliases: vn
     usage: /<command>
 permissions:
   villagernames.randomize:
