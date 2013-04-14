@@ -64,7 +64,7 @@ public class VillagerNames extends JavaPlugin implements Listener {
 		// Check if instance is player and not console
 		if (!(sender instanceof Player)){
 			this.getLogger().info("No console commands");
-			return false;
+			return true;
 		} 
 
 		// Define player object
