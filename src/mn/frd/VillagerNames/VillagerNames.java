@@ -140,7 +140,7 @@ public class VillagerNames extends JavaPlugin implements Listener {
 					// If argument is "rename"
 				} else if(args[0].toString().equalsIgnoreCase("rename")){
 					// Check if player has permissions to use that command
-					if(p.hasPermission("villagernames.randomize")){
+					if(p.hasPermission("villagernames.rename")){
 						// Check if more than one argument
 						if(args.length > 1) {
 							// Check if target is a Villager
@@ -155,6 +155,9 @@ public class VillagerNames extends JavaPlugin implements Listener {
 							targetVillager.setCustomName(com.google.common.base.Joiner.on(" ").join(Arrays.copyOfRange(args, 1, args.length)));
 							targetVillager.setCustomNameVisible(true);
 
+							// Return information to player
+							p.sendMessage(prefix + ChatColor.GOLD +" Successfully baptized " + ChatColor.RED + com.google.common.base.Joiner.on(" ").join(Arrays.copyOfRange(args, 1, args.length)));
+							
 							// Log the actions
 							this.getLogger().info( p.getDisplayName() +" renamed a Villager to: '" + com.google.common.base.Joiner.on(" ").join(Arrays.copyOfRange(args, 1, args.length)) + "' at location: '" + p.getLocation().getWorld().toString() + "," + p.getLocation().getX() + "," + p.getLocation().getY() + "," + p.getLocation().getZ() +"'");
 							return true;
