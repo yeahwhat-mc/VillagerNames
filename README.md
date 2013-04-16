@@ -12,9 +12,11 @@ If you search for the custom version that includes also a name dictionary for Zo
 * Simple
 * Easy to configure
 * [MCStats](http://mcstats.org/) metrics support
-* Different names per Villager Profession
-* Randomize the names of all loaded Villagers
-* new Feature: Rename easily the villager that you're looking at
+* Feature: Different names per Villager Profession
+* Feature: Randomize the names of all loaded Villagers
+* Feature: Rename easily the villager that you're looking at
+* new Feature: Alias command /vn
+
 
 ## Permissions
 
@@ -54,4 +56,4 @@ _none_
 
 ## Version
 
-0.3
+0.4.1
