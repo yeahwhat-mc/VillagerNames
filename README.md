@@ -57,3 +57,7 @@ _none_
 ## Version
 
 0.4.1
+
+## MCstats
+
+![metrics](http://api.mcstats.org/signature/VillagerNames.png)
