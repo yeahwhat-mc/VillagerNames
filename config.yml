@@ -4,6 +4,10 @@
 #
 
 log: true
+other:
+- 'Villager_A'
+- 'Villager_B'
+- 'Villager_C'
 farmer:
 - 'Adelaide'
 - 'Aelfwald'
