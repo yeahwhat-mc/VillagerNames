@@ -15,15 +15,16 @@ If you search for the custom version that includes also a name dictionary for Zo
 * Feature: Different names per Villager Profession
 * Feature: Randomize the names of all loaded Villagers
 * Feature: Rename easily the villager that you're looking at
-* new Feature: Alias command /vn
+* Feature: Alias command /vn
+* new Feature: Name villagers with unknown professions (if you run MCPC+ or equivalents)
 
 
 ## Permissions
 
 Permission | Purpose | Default
 --- | --- | ---
-`villagernames.randomize | Randomize the names of all loaded Villagers | ops
-`villagernames.rename | Rename easily the villager that you're looking at | ops
+`villagernames.randomize` | Randomize the names of all loaded Villagers | ops
+`villagernames.rename` | Rename easily the villager that you're looking at | ops
 
 ## Screenshots
 
@@ -49,6 +50,9 @@ Permission | Purpose | Default
     butcher:
     - 'Peter'
     - ...
+    other:
+    - 'Xolf'
+    - ...
 
 ## Depencies
 
@@ -56,7 +60,7 @@ _none_
 
 ## Version
 
-0.4.1
+0.5
 
 ## MCstats
 
