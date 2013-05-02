@@ -99,12 +99,16 @@ public class VillagerNames extends JavaPlugin implements Listener {
 								String currentProfession = null;
 
 								// Get profession
-								switch (e.getProfession().getId()){
-								case 0: currentProfession = "farmer"; break;
-								case 1: currentProfession = "librarian"; break;
-								case 2: currentProfession = "priest"; break;
-								case 3: currentProfession = "blacksmith"; break;
-								case 4: currentProfession = "butcher"; break;
+								if(e.getProfession()==null){
+									currentProfession = "other";
+								} else {
+									switch (e.getProfession().getId()){
+									case 0: currentProfession = "farmer"; break;
+									case 1: currentProfession = "librarian"; break;
+									case 2: currentProfession = "priest"; break;
+									case 3: currentProfession = "blacksmith"; break;
+									case 4: currentProfession = "butcher"; break;
+									}
 								}
 
 								// Load the FARMER names out of config.yml into a List
@@ -190,8 +194,11 @@ public class VillagerNames extends JavaPlugin implements Listener {
 				// Initialize variable
 				String professionConfig = null;
 				
+				// If profession == null
+				if (currentProfession == null) {
+					professionConfig = "other";
 				// If profession == FARMER
-				if (currentProfession.getId() == 0){
+				} else if (currentProfession.getId() == 0){
 					professionConfig = "farmer";
 				// If profession == LIBRARIAN
 				} else if (currentProfession.getId() == 1){
