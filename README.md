@@ -16,8 +16,7 @@ If you search for the custom version that includes also a name dictionary for Zo
 * Feature: Randomize the names of all loaded Villagers
 * Feature: Rename easily the villager that you're looking at
 * Feature: Alias command /vn
-* new Feature: Name villagers with unknown professions (if you run MCPC+ or equivalents)
-
+* new Feature: Name villagers with unknown professions (if you run MCPC+ or equivalents) by [chiting](http://dev.bukkit.org/profiles/chiting/)
 
 ## Permissions
 
