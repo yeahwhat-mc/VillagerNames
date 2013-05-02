@@ -4,10 +4,6 @@
 #
 
 log: true
-other:
-- 'Villager_A'
-- 'Villager_B'
-- 'Villager_C'
 farmer:
 - 'Adelaide'
 - 'Aelfwald'
@@ -180,6 +176,7 @@ butcher:
 - 'Wehha'
 - 'Winifred'
 - 'Wuffa'
+other:
 - 'Wulfhere'
 - 'Xalvador'
 - 'Zane'
