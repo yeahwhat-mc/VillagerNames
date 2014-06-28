@@ -64,3 +64,7 @@ _none_
 ## MCstats
 
 ![metrics](http://api.mcstats.org/signature/VillagerNames.png)
+
+## License
+
+[WTFPL](LICENSE)
