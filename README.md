@@ -59,7 +59,7 @@ _none_
 
 ## Version
 
-0.5.2
+0.5.4
 
 ## MCstats
 
